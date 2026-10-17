@@ -1,0 +1,23 @@
+:root {
+    --green: #4CAF4F;
+    --green-hover: #43A046;
+    --green-light: #C8E6C9;
+
+    --text: #4D4D4D;
+    --text-dark: #18191F;
+    --text-grey: #717171;
+    --text-light: #89939E;
+
+    --white: #FFFFFF;
+    --background: #F5F7FA;
+    --dark: #263238;
+    --input: rgba(255, 255, 255, 0.2);
+    --placeholder: #D9DBE1;
+
+    --shadow: rgba(171, 190, 209, 0.2);
+
+    --instagram: #E4405F;
+    --dribbble: #2E7D32;
+    --twitter: #1DA1F2;
+    --youtube: #FF0000;
+}

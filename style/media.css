@@ -1,0 +1,215 @@
+@media (max-width: 1200px) {
+    .menu {
+        gap: 24px;
+    }
+
+    .hero-image {
+        width: 340px;
+    }
+
+    .cards {
+        gap: 24px;
+    }
+
+    .card {
+        flex: 1;
+    }
+
+    .about-image {
+        width: 360px;
+    }
+
+    .about-text {
+        width: auto;
+        flex: 1;
+    }
+
+    .stats-list {
+        width: 480px;
+    }
+
+    .testimonial-image {
+        width: 300px;
+    }
+
+    .testimonial-text {
+        width: auto;
+        flex: 1;
+    }
+
+    .testimonial-logos {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .blog-cards {
+        gap: 24px;
+    }
+
+    .blog-card {
+        flex: 1;
+    }
+
+    .blog-image {
+        width: 100%;
+    }
+
+    .blog-info {
+        width: 86%;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .hero-image {
+        width: 300px;
+    }
+
+    .about-inner,
+    .stats-inner,
+    .testimonial-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .stats-item {
+        justify-content: center;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 442px;
+    }
+
+    .stats-list {
+        width: 100%;
+        max-width: 540px;
+    }
+
+    .testimonial-image {
+        margin: -16px auto;
+    }
+
+    .testimonial-logos {
+        justify-content: center;
+    }
+
+    .demo-title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .footer-about {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 48px;
+    }
+
+    .hero-inner {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 391px;
+    }
+
+    .dots {
+        margin-top: 40px;
+    }
+
+    .section-title,
+    .about-title,
+    .stats-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .clients-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .cards,
+    .blog-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .card,
+    .blog-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .demo-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .footer-column {
+        width: auto;
+        flex: 1;
+    }
+
+    .footer-subscribe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .card-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .stats-item {
+        width: 100%;
+    }
+
+    .testimonial-image {
+        width: 100%;
+    }
+
+    .demo-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .demo-title br {
+        display: none;
+    }
+}
