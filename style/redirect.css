@@ -1,0 +1,118 @@
+.redirect-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 16px;
+    background-color: var(--background);
+}
+
+.redirect-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 48px 40px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow);
+    text-align: center;
+    animation: fade-down 0.8s ease both;
+}
+
+.redirect-logo {
+    width: 155px;
+    margin: 0 auto 40px;
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 32px;
+    border: 5px solid var(--green-light);
+    border-top-color: var(--green);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.redirect-title {
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 12px;
+    word-break: break-word;
+}
+
+.redirect-text {
+    color: var(--text-grey);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.progress {
+    height: 6px;
+    margin-bottom: 32px;
+    overflow: hidden;
+    background-color: var(--green-light);
+    border-radius: 3px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: var(--green);
+    animation: fill 3s linear forwards;
+}
+
+@keyframes fill {
+    to {
+        width: 100%;
+    }
+}
+
+.redirect-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.redirect-cancel {
+    padding: 10px 20px;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.redirect-cancel:hover {
+    color: var(--green-hover);
+}
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .redirect-card {
+        padding: 32px 24px;
+    }
+
+    .redirect-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

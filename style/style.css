@@ -18,6 +18,22 @@ a {
     text-decoration: none;
 }
 
+.home-page {
+    animation: page-in 0.7s ease both;
+}
+
+@keyframes page-in {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 img {
     display: block;
 }
@@ -46,6 +62,38 @@ img {
 
 .button:hover {
     background-color: var(--green-hover);
+}
+
+.button-move {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.button-move:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 175, 79, 0.45);
+}
+
+.button-move:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.button-arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.button-move:hover .button-arrow {
+    transform: translateX(6px);
+}
+
+.back-arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+a:hover .back-arrow {
+    transform: translateX(-6px);
 }
 
 .button-small {
@@ -373,10 +421,40 @@ img {
 }
 
 .testimonial-link {
+    position: relative;
     color: var(--green);
     font-size: 20px;
     font-weight: 600;
     white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.testimonial-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--green-hover);
+    transition: width 0.3s;
+}
+
+.testimonial-link:hover {
+    color: var(--green-hover);
+}
+
+.testimonial-link:hover::after {
+    width: 100%;
+}
+
+.testimonial-arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.testimonial-link:hover .testimonial-arrow {
+    transform: translateX(6px);
 }
 
 .blog {
@@ -465,6 +543,11 @@ img {
 .footer-logo {
     width: 191px;
     margin-bottom: 40px;
+    transition: transform 0.3s;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
 }
 
 .footer-copyright {

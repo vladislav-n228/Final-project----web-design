@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <link rel="icon" href="src/logos/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/root.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/redirect.css">
+</head>
+<body class="redirect-page">
+    <div class="redirect-card">
+        <img src="src/logos/Logo.png" alt="Nexcent" class="redirect-logo">
+
+        <div class="spinner"></div>
+
+        <h1 class="redirect-title">
+            Redirecting to...
+            <span class="green" id="site-name">website</span>
+        </h1>
+        <p class="redirect-text">Please wait <span id="seconds">3 seconds</span></p>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <div class="redirect-buttons">
+            <a href="#" class="button button-small" id="go-now">Go now</a>
+            <a href="index.html" class="redirect-cancel">Cancel</a>
+        </div>
+    </div>
+
+    <script src="js/redirect.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="src/logos/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/root.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/auth.css">
+</head>
+<body class="auth-page">
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html"><img src="src/logos/Logo.png" alt="Nexcent" class="logo"></a>
+            <a href="index.html" class="back-link"><span class="back-arrow">&larr;</span> Back to home</a>
+        </div>
+    </header>
+
+    <main class="auth">
+        <div class="container auth-inner">
+            <div class="auth-side">
+                <img src="src/illustrations/Illustration.png" alt="Illustration" class="auth-image">
+
+                <ul class="auth-benefits">
+                    <li>Manage members and events in one place</li>
+                    <li>Accept payments from your community</li>
+                    <li>Free 14-day trial, no card required</li>
+                </ul>
+            </div>
+
+            <form class="auth-form" id="form">
+                <h1 class="auth-title">Welcome <span class="green">back</span></h1>
+                <p class="auth-subtitle">Log in to your Nexcent account</p>
+
+                <label class="auth-label" for="email">Email</label>
+                <input class="auth-input" type="email" id="email" placeholder="example@mail.com">
+
+                <label class="auth-label" for="password">Password</label>
+                <input class="auth-input" type="password" id="password" placeholder="Enter your password">
+
+                <label class="auth-check">
+                    <input type="checkbox"> Remember me
+                </label>
+
+                <p class="auth-message" id="message"></p>
+
+                <button type="submit" class="button auth-button">Log in</button>
+
+                <div class="auth-divider">or</div>
+
+                <div class="auth-socials">
+                    <button type="button" class="auth-social">Google</button>
+                    <button type="button" class="auth-social">Facebook</button>
+                </div>
+
+                <p class="auth-switch">
+                    Don't have an account? <a href="signup.html">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-about">
+                <a href="about.html"><img src="src/icons/Logo.png" alt="Nexcent" class="footer-logo"></a>
+                <p class="footer-copyright">Copyright © 2020 Nexcent ltd.</p>
+                <p class="footer-copyright">All rights reserved</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com" target="_blank" class="social-link social-instagram">
+                        <img src="src/icons/Social Icons.png" alt="Instagram">
+                    </a>
+                    <a href="https://vladyslav228.itch.io/galaxy-orbit" target="_blank" class="social-link social-dribbble">
+                        <img src="src/icons/Social Icons (1).png" alt="Dribbble">
+                    </a>
+                    <a href="https://x.com" target="_blank" class="social-link social-twitter">
+                        <img src="src/icons/Social Icons (2).png" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/@vladikletta6670/videos" target="_blank" class="social-link social-youtube">
+                        <img src="src/icons/Social Icons (3).png" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About us</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                    <li><a href="#" class="footer-link">Contact us</a></li>
+                    <li><a href="#" class="footer-link">Pricing</a></li>
+                    <li><a href="#" class="footer-link">Testimonials</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Help center</a></li>
+                    <li><a href="#" class="footer-link">Terms of service</a></li>
+                    <li><a href="#" class="footer-link">Legal</a></li>
+                    <li><a href="#" class="footer-link">Privacy policy</a></li>
+                    <li><a href="#" class="footer-link">Status</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h4 class="footer-title">Stay up to date</h4>
+                <div class="footer-form">
+                    <input type="email" placeholder="Your email address" class="footer-input">
+                    <button class="footer-send">
+                        <img src="src/icons/Send.png" alt="Send">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
